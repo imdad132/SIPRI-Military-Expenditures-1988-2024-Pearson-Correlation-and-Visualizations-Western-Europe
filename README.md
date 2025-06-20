@@ -1,2 +1,31 @@
 # SIPRI-Military-Expenditures-1988-2024-Pearson-Correlation-and-Visualizations-Western-Europe
 Data Transformation, Data Aggregation, Correlation Analysis, Data Visualization 
+
+
+Data Analysis and Visualization using Python
+
+The notebook analyzes data on military expenditures from an Excel file to understand trends and patterns across different regions and countries from 1974 to 2024.
+Step-by-step Explanation:
+1.	Loading Libraries: The first step imports necessary tools (libraries like pandas, geopandas, numpy, matplotlib, and seaborn) to work with data, perform calculations, and create visualizations.
+2.	Uploading Data: This step allows you to upload the Excel file containing the military expenditure data from your computer into the notebook environment.
+3.	Loading Regional Data: The code reads a specific sheet from the uploaded Excel file called 'Regional totals' into a table-like structure called a DataFrame. It then shows you the first few rows of this table.
+4.	Checking for Missing Data (Regional): This step checks if there are any missing values in the 'Regional totals' data to ensure the data is complete for analysis. The output shows there are no missing values in this particular sheet.
+5.	Finding the Region with the Largest Increase (2023-2024): The code calculates the difference in military spending for each region between 2024 and 2023 and then identifies and prints the name of the region with the biggest increase during this period.
+6.	Finding Regions with Highest Spending (1988 and 2024): This part of the code finds and prints the region that had the highest military spending in the year 1988 and the region with the highest spending in 2024.
+7.	Finding Regions with Lowest Spending (1988 and 2024): Similar to the previous step, this code finds and prints the region with the lowest military spending in 1988 and the region with the lowest spending in 2024.
+8.	Finding Region with Largest Rise (1988-2024): This calculates the total increase in military spending for each region from 1988 to 2024 and identifies and prints the region with the most significant rise over this entire period.
+9.	Finding Region with Steepest Decline (1988-2024): This calculates the total change in military spending for each region from 1988 to 2024 and identifies and prints the region with the largest decrease (steepest decline) over this period.
+10.	Loading GDP Share Data: The code reads another sheet from the Excel file called 'Share of GDP' into a DataFrame. This sheet likely contains data on military spending as a percentage of each country's Gross Domestic Product. It then displays the first few rows.
+11.	Filtering Data for Western Europe (GDP Share): This step creates a new DataFrame containing only the data for countries in Western Europe from the 'Share of GDP' sheet, focusing on the years from 1974 to 2024.
+12.	Finding Average GDP Share (Western Europe 2024): The code calculates and prints the average military spending as a share of GDP for all the Western European countries in the year 2024.
+13.	Finding Largest Spender (Western Europe 2024 - GDP Share): This identifies and prints the Western European country with the highest military spending as a share of its GDP in 2024.
+14.	Finding Smallest Spender (Western Europe 2024 - GDP Share): This identifies and prints the Western European country with the lowest military spending as a share of its GDP in 2024.
+15.	Finding Top 5 Spenders (Western Europe 2024 - GDP Share): This sorts the Western European countries based on their military spending as a share of GDP in 2024 and displays the top 5 countries along with their values.
+16.	Visualizing GDP Share Trends (Western Europe 1988-2024): This code prepares the Western Europe GDP share data for plotting and then generates a line graph showing how the military spending as a share of GDP has changed over time (1988-2024) for each selected Western European country. This helps visualize trends and comparisons.
+17.	Loading Government Spending Share Data: The code reads another sheet from the Excel file called 'Share of Govt. spending' into a DataFrame. This sheet likely contains data on military spending as a percentage of each country's total government spending. It then displays the first few rows.
+18.	Filtering Data for Western Europe (Government Spending Share): This step creates a new DataFrame containing only the data for countries in Western Europe from the 'Share of Govt. spending' sheet, focusing on the years from 1988 to 2024.
+19.	Replacing Missing Values: This code replaces any instances of '...' with "Not a Number" (NaN) in the Western Europe government spending data. This is a common data cleaning step before analysis.
+20.	Finding Top 5 Spenders (Western Europe 2024 - Government Spending Share): This sorts the Western European countries based on their military spending as a share of government spending in 2024 and displays the top 5 countries along with their values.
+21.	Calculating and Visualizing Correlation (GDP vs. Government Spending Share): This section calculates the Pearson correlation between the share of GDP and the share of Government spending for military expenditures across Western European countries for each year from 1988 to 2024. Correlation measures how closely two variables are related. It then performs hierarchical clustering based on these correlations and displays the results as a dendrogram. The dendrogram visually represents the relationships between the correlations over the years, grouping similar years together based on the patterns of military spending relative to GDP and government spending.
+In essence, the notebook loads and cleans data, performs several calculations to find regions and countries with the highest/lowest spending and the biggest changes, and visualizes the trends over time to provide insights into military expenditure patterns.
+
